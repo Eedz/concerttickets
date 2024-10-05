@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Tickets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Filter Options</h2>
+            <div>
+                <h3>Bands</h3>
+                <ul id="bands-list">
+                    <!-- Bands will be dynamically populated here -->
+                </ul>
+            </div>
+            <div>
+                <h3>Locations</h3>
+                <ul id="locations-list">
+                    <!-- Locations will be dynamically populated here -->
+                </ul>
+            </div>
+            <div>
+                <h3>Souvenirs</h3>
+                <ul id="souvenirs-list">
+                    <!-- Souvenirs will be dynamically populated here -->
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Concert Tickets</h1>
+                <input type="text" id="search-bar" placeholder="Search by band, venue, or souvenir">
+            </header>
+
+            <section id="ticket-list">
+                <!-- Concert tickets will be dynamically loaded here -->
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
