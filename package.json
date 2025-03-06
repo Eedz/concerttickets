@@ -1,17 +1,30 @@
 {
   "name": "conerttickets",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Edward Bauer",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
     "express": "^4.21.0",
+    "pg": "^8.13.3",
     "xlsx": "^0.18.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eedz/concerttickets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Eedz/concerttickets/issues"
+  },
+  "homepage": "https://github.com/Eedz/concerttickets#readme",
+  "description": "",
+  "devDependencies": {
+    "prisma": "^6.4.1"
   }
 }
