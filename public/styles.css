@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('images/background.jpg');
+    background-size: 100%;
 }
 
 .container {
@@ -12,7 +14,7 @@ body {
     width: 250px;
     background-color: #f4f4f4;
     padding: 20px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .sidebar h2, .sidebar h3 {
@@ -30,14 +32,14 @@ body {
 
 .main-content {
     flex: 1;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 header input {
@@ -49,20 +51,21 @@ header input {
 #ticket-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .ticket {
     border: 1px solid #ccc;
-    padding: 20px;
-    display: flex;
+    padding: 10px;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    opacity: 75%;
 }
 
 .ticket-images img {
-    width: 100px;
-    height: 100px;
+    height: 50px;
     margin-left: 10px;
     object-fit: cover;
 }
@@ -75,3 +78,33 @@ header input {
 .ticket-details h2, .ticket-details h3 {
     margin: 0;
 }
+
+.ticket-info {
+    color: red;
+}
+
+.pagination {
+    display: flex;
+    
+    opacity: 75%;
+    background-color: white;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.pagination a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.pagination a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+.pagination a:hover {
+    background-color: grey; 
+    text-decoration: none;
+  }
