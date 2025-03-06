@@ -1,25 +1,23 @@
 <h2>Filter Options</h2>
 <h3>Bands</h3>
-<% if (bands.length===0) { %>
-    <a>No bands found.</a>
-<% } else { %>
-    <ul id="bands-list">
-    <% bands.forEach(band => { %>
-        <li>
-            <%= band %>
-        </li>
-    <% }) %>
-    </ul>
-<% } %>
+
+<form>
+    <select>
+        <option value="">---Filter for Band---</option>
+        <% bands.forEach(band => { %>
+            <option value="<%= band %>"> <%= band %></option>
+        <% }) %>
+    </select>
+</form>
+
 <h3>Locations</h3>
-<% if (locations.length===0) { %>
-    No bands found.
-<%} else { %>
-    <ul id="locations-list">
-    <% locations.forEach(location => { %>
-        <li>
-            <%= location %>
-        </li>
-    <% }) %>
-    </ul>
-<% } %>
+
+<form>
+    <select>
+        <option value="">---Filter for Venue---</option>
+        <% locations.forEach(location => { %>
+            <option value="<%= location %>"> <%= location %></option>
+        <% }) %>
+    </select>
+</form>
+
