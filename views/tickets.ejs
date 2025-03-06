@@ -1,0 +1,26 @@
+<% if (tickets.length===0) { %>
+    No tickets found.
+<%} else { %>
+    <% tickets.forEach(ticket => { %>
+        <div class="ticket">
+            <p class="ticket-info">
+                <h3><%= ticket.eventdate + ' - ' + ticket.venue %></h3>                               
+            </p>
+            <p><%= ticket.band %> </p>
+            
+        </div>
+    <%}) %>
+    <div class ="pagination">
+        <% if (currentPage>1) { %>
+            <a href="/?page=<%= currentPage -1 %>">Previous</a>
+        <% } %>
+
+        <% for (let i=1;i<= totalPages;i++){ %>
+            <a href="/?page=<%= i %>" class="<%= i===currentPage? 'active' : ''%>"><%= i %></a>
+        <% }%>
+
+        <% if (currentPage< totalPages){%>
+            <a href="/?page=<%= currentPage + 1 %>"> Next </a>
+        <%}%>
+    </div>
+<%} %>
